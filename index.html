@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myFunction()">Try this button</button>
+<p id="hour"></p>
+<p id="greeting"></p>
+<script>
+    function myFunction() {
+
+var greeting
+var hour= new Date().getHours()
+
+if(hour<10) {
+
+    greeting="Good morning"
+}
+
+else if(hour<20) {
+
+    greeting="Good day"
+}
+
+else {
+
+    greeting="Good evening"
+}
+
+document.getElementById("hour").innerHTML= "Current time is: " + hour
+document.getElementById("greeting").innerHTML= greeting
+
+    }
+</script>
+</body>
+</html>

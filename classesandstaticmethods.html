@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        class student {
+
+            constructor(name, year) {
+
+                this.name = name
+                this.year = year
+            }
+
+            age() {
+
+                var date = new Date();
+                return date.getFullYear() - this.year
+
+
+            }
+
+        }
+
+        class car extends student {
+
+            constructor(name, year, brand, model) {
+                super(name,year)
+                this.brand = brand;
+                this.model = model;
+            }
+        }
+        student1 = new student("ayan", 2007)
+        car1= new car("ayan", 2007, "KIA", " picanto")
+        document.write("my name is " + student1.name + " and my age is " + student1.age() + "<br>" + "I drive a " + car1.brand + car1.model)
+    </script>
+</body>
+
+</html>

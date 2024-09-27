@@ -7,7 +7,7 @@
 </head>
 <body>
     <form name="form" onsubmit="myFunction(event)">
-        <input type="number" id="price" min="100" max="400">
+        <input type="number" id="age" min="18" max="400">
         <input type="submit">
             </form>
 <p id="result"></p>        
@@ -15,15 +15,12 @@
         
         function myFunction(e) {
         e.preventDefault()
-        var price= document.getElementById("price").value
-        if(price == "") {
+        var age= document.getElementById("age").value
+        if(age == "") {
             document.write("This is a required field!")
         }
-        else if (price.length>2){
-            document.write("The number should be more than 2 numbers in total.")
-        }
-        if (price.checkValidity()) {
-        document.getElementById("result").innerHTML=price.validationMessage;
+        if (age.checkValidity()) {
+        document.getElementById("result").innerHTML=age.validationMessage;
 
         }
         else {

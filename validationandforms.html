@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form" onsubmit="myFunction(event)">
+        <input type="number" id="price" min="100" max="400">
+        <input type="submit">
+            </form>
+<p id="result"></p>        
+        <script>
+        
+        function myFunction(e) {
+        e.preventDefault()
+        var price= document.getElementById("price").value
+        if(price == "") {
+            document.write("This is a required field!")
+        }
+        else if (price.length>2){
+            document.write("The number should be more than 2 numbers in total.")
+        }
+        if (price.checkValidity()) {
+        document.getElementById("result").innerHTML=price.validationMessage;
+
+        }
+        else {
+
+        document.getElementById("result").innerHTML="Input is OK"}
+        }
+        </script>
+</body>
+</html>

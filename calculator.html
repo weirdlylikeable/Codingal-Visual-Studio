@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <form class="main" name="form">
+        <input type="text" name="screen" class="screen" readonly>
+            <div class="row1">
+                <button type="button" value="9" class="btn" name="btn" onclick="getValue(this)">9</button> 
+                <button type="button" value="8" class="btn" name="btn" onclick="getValue(this)">8</button> 
+                <button type="button" value="7" class="btn" name="btn" onclick="getValue(this)">7</button>
+                <button type="button" value="*" class="btn" name="btn" onclick="getValue(this)">X</button>
+            </div>
+            <div class="row2">
+                <button type="button" value="6" class="btn" name="btn" onclick="getValue(this)">6</button> 
+                <button type="button" value="5" class="btn" name="btn" onclick="getValue(this)">5</button> 
+                <button type="button" value="4" class="btn" name="btn" onclick="getValue(this)">4</button>
+                <button type="button" value="+" class="btn" name="btn" onclick="getValue(this)">+</button>
+            </div>
+            <div class="row3">
+                <button type="button" value="3" class="btn" name="btn" onclick="getValue(this)">3</button> 
+                <button type="button" value="2" class="btn" name="btn" onclick="getValue(this)">2</button> 
+                <button type="button" value="1" class="btn" name="btn" onclick="getValue(this)">1</button>
+                <button type="button" value="-" class="btn" name="btn" onclick="getValue(this)">-</button>
+            </div>
+            <div class="row4">
+                <button type="button" value="C" class="btn btnc" name="btn" onclick="ClearC()">C</button> 
+                <button type="button" value="0" class="btn" name="btn" onclick="getValue(this)">0</button> 
+                <button type="button" value="=" class="btn btne" name="btn" onclick="ev()">=</button>
+                <button type="button" value="/" class="btn" name="btn" onclick="getValue(this)">/</button>
+            </div>
+            <script src="script.js"></script>
+</body>
+</html>

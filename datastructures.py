@@ -29,3 +29,29 @@ print("The list is now sliced:", slicingFruit)
 
 multiplyFruit = Fruit*4
 print("The list is now multiplied:", multiplyFruit)
+
+my_dict= {'name': 'Jack', 'age': 26}
+
+print(my_dict['name'])
+print (my_dict.get('age'))
+
+my_dict['age']= 27 
+print(my_dict)
+
+my_dict['address'] = 'Downtown' 
+print(my_dict)
+
+my_dict.pop('age')
+print(my_dict)
+
+def test(lst):
+    result = {}
+    for item in lst:
+        result[item[0]] = item[1:]
+    return result
+
+students= [[1, 'Jean Castro', 'V'], [2, 'Lula Powell', 'V'], [3, 'Brian Howell', 'VI'], [4, 'Lynne Foster', 'VI'], [5, 'Zachary Simon', 'VII']]
+print("\nOriginal list of lists:")
+print(students)
+print("\nConverted lists to a dictionary: ")
+print(test(students))

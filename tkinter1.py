@@ -1,0 +1,17 @@
+import tkinter as tk
+
+window=tk.Tk()
+window.geometry("400x400")
+name=tk.Label(text="Please provide your name:")
+name.place(x=50, y=100)
+NameEntry=tk.Entry()
+NameEntry.place(x=200, y=100)
+email=tk.Label(text="Please provide your email:")
+email.place(x=50, y=200)
+emailEntry=tk.Entry()
+emailEntry.place(x=200, y=200)
+password=tk.Label(text="Please provide your password:")
+password.place(x=25, y=300)
+passwordEntry=tk.Entry()
+passwordEntry.place(x=200, y=300)
+window.mainloop()
